@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗夜计划 · 城市暗夜保护</title>
+<link rel="stylesheet" href="css/style.css?v=40">
+</head>
+<body>
+
+<!-- ============ 页头 ============ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+        <path d="M6 33c6-9 12-13.5 18-13.5S36 24 42 33" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".35"/>
+        <circle cx="17" cy="17" r="1.9" fill="currentColor"/>
+        <circle cx="29.5" cy="13.5" r="1.15" fill="currentColor"/>
+        <circle cx="35" cy="22" r="1.4" fill="currentColor"/>
+        <circle cx="23" cy="24" r="2.6" fill="currentColor"/>
+      </svg>
+    </span>
+    <!-- ↓↓↓ 组织名称占位，替换这一处即可 ↓↓↓ -->
+    <span class="brand-name">暗夜计划</span>
+    <span class="brand-sub">Dark Sky Initiative</span>
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="展开导航" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="is-active">首页</a>
+    <a href="pages/light-pollution.html">光污染</a>
+    <a href="pages/dark-sky.html">暗夜保护</a>
+    <a href="pages/research.html">我的研究</a>
+    <a href="pages/map.html">数据地图</a>
+    <a href="pages/astronomy.html">天文科普</a>
+    <a href="pages/action.html">行动</a>
+  </nav>
+</header>
+
+<!-- ============ 封面 ============ -->
+<section class="hero">
+  <div class="wrap">
+    <figure class="hero-frame">
+      <img src="img/cover.jpg" alt="银河与天文台圆顶的夜空">
+      <div class="hero-overlay">
+        <h1 class="hero-title">
+          在千万人口的杭州，<br>
+          寻找一片能看见星星的黑暗
+        </h1>
+        <p class="hero-lede">
+          我们用一年时间、100+ 个测点，找到了答案。
+        </p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 导语 ============ -->
+<section class="intro" id="intro">
+  <div class="wrap intro-grid">
+
+    <div class="intro-body">
+      <p class="intro-kicker">我们做什么</p>
+
+      <p class="intro-text">
+        光污染，是<em>夜间使用人造光带来的不利影响</em>——
+        包括辉光、眩光、溢光和夜间能见度受损。
+        它让城市里的孩子看不见银河，让候鸟迷航，也让天文观测失去最后的阵地。
+      </p>
+
+      <p class="intro-text">
+        这个网站记录一项还在进行中的工作：在全杭州范围内，
+        用卫星遥感、地面实测与空间建模，找出一块真正可达的暗夜空间，
+        并为它提出一套可落地的照明改造方案。
+      </p>
+
+      <p class="intro-text">
+        需要说明的是：这项研究<em>始于天文，但不止于天文</em>。
+        夜间照明影响候鸟迁徙、昆虫数量与夜行动物的活动范围，
+        同时大量电力被送往不需要照亮的方向。
+      </p>
+
+      <p class="intro-text">
+        本研究的目的是保护市区内岌岌可危的暗夜资源，而不是治理光污染。
+        <strong>把看星星的权利还给孩子</strong>：让孩子们放学后、周末晚上，
+        走几步路或坐几站公交，就能在一块不太亮的地方看到土星、木星、猎户座、天鹅座。
+        哪怕看不到银河，也能知道星空是真实存在的，不是课本插图。
+      </p>
+    </div>
+
+    <figure class="intro-figure">
+      <img src="img/intro.jpg" alt="夜晚，一个孩子在城市街头用望远镜观星">
+    </figure>
+
+  </div>
+</section>
+
+<!-- ============ 栏目入口 ============ -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillar-grid">
+
+      <a class="pillar" href="pages/light-pollution.html">
+        <span class="pillar-no">01</span>
+        <h3>光污染</h3>
+        <p>它是什么、从哪来、对人和生态做了什么。附全球与中国现状数据。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+      <a class="pillar" href="pages/dark-sky.html">
+        <span class="pillar-no">02</span>
+        <h3>暗夜保护</h3>
+        <p>国际暗夜场所体系、中国的政策依据，以及为什么城市内部也值得保护。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+      <a class="pillar" href="pages/research.html">
+        <span class="pillar-no">03</span>
+        <h3>我的研究</h3>
+        <p>从三个候选区到 37 个测点：完整的方法、数据、发现与失败记录。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+      <a class="pillar" href="pages/map.html">
+        <span class="pillar-no">04</span>
+        <h3>数据地图</h3>
+        <p>西溪湿地福堤走廊的实测亮度分布，以及各候选区的横向对比。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+      <a class="pillar" href="pages/astronomy.html">
+        <span class="pillar-no">05</span>
+        <h3>天文科普</h3>
+        <p>怎么看星星、用什么看、什么时候看。写给想抬头的人。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+      <a class="pillar" href="pages/action.html">
+        <span class="pillar-no">06</span>
+        <h3>行动</h3>
+        <p>你能做的六件事，以及我们正在推动的照明改造方案。</p>
+        <span class="pillar-go">进入 →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark brand-mark--sm">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+          <path d="M6 33c6-9 12-13.5 18-13.5S36 24 42 33" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".35"/>
+          <circle cx="17" cy="17" r="1.9" fill="currentColor"/>
+          <circle cx="29.5" cy="13.5" r="1.15" fill="currentColor"/>
+          <circle cx="35" cy="22" r="1.4" fill="currentColor"/>
+          <circle cx="23" cy="24" r="2.6" fill="currentColor"/>
+        </svg>
+      </span>
+      <p>暗夜计划 · 让城市重新看见星空</p>
+    </div>
+    <div class="footer-links">
+      <a href="pages/light-pollution.html">光污染</a>
+      <a href="pages/dark-sky.html">暗夜保护</a>
+      <a href="pages/research.html">我的研究</a>
+      <a href="pages/map.html">数据地图</a>
+      <a href="pages/astronomy.html">天文科普</a>
+      <a href="pages/action.html">行动</a>
+    </div>
+  </div>
+  <div class="wrap footer-note">
+    <p class="footer-contact">
+      <span class="footer-contact-label">联系</span>
+      <a href="mailto:ronghui0202@gmail.com">ronghui0202@gmail.com</a>
+    </p>
+    <p>本站数据来自作者在杭州西溪湿地福堤走廊的实地测量与公开遥感数据。欢迎引用，请注明来源。</p>
+  </div>
+</footer>
+
+<script src="js/main.js?v=40"></script>
+</body>
+</html>

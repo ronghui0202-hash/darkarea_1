@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的研究 · 暗夜计划</title>
+<link rel="stylesheet" href="../css/style.css?v=40">
+</head>
+<body>
+<header class="site-header is-stuck" id="siteHeader">
+  <a class="brand" href="../index.html">
+    <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".55"/><path d="M6 33c6-9 12-13.5 18-13.5S36 24 42 33" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".35"/><circle cx="17" cy="17" r="1.9" fill="currentColor"/><circle cx="29.5" cy="13.5" r="1.15" fill="currentColor"/><circle cx="35" cy="22" r="1.4" fill="currentColor"/><circle cx="23" cy="24" r="2.6" fill="currentColor"/></svg></span>
+    <span class="brand-name">暗夜计划</span>
+    <span class="brand-sub">Dark Sky Initiative</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="展开导航" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="site-nav" id="siteNav">
+    <a href="../index.html">首页</a>
+    <a href="light-pollution.html">光污染</a>
+    <a href="dark-sky.html">暗夜保护</a>
+    <a href="research.html" class="is-active">我的研究</a>
+    <a href="map.html">数据地图</a>
+    <a href="astronomy.html">天文科普</a>
+    <a href="action.html">行动</a>
+  </nav>
+</header>
+<main class="page-main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="page-kicker"><a href="../index.html">← 返回首页</a></p>
+      <h1 class="page-title">我的研究</h1>
+      <p class="page-lede">在千万人口的杭州，寻找最后一片能看见星星的地方。</p>
+    </div>
+  </section>
+  <section class="doc">
+    <div class="wrap">
+      <div class="doc-body">
+
+<div class="doc-full">
+<h2>研究概述</h2>
+<p>这项研究要回答一个具体问题：<strong>在杭州这样一座千万人口的城市里，还存在可以看见星星的地方吗？</strong></p>
+<p>研究以杭州市区内可达的湿地空间为对象，结合遥感数据、空间分析与地面实测，逐层缩小范围，最终定位到一片仍保有相对暗夜条件的区域，并识别出其中暗度最高的一点。</p>
+</div>
+
+<div class="doc-full">
+<h2>方法</h2>
+<p>工作在多源数据与多尺度分析的框架下展开：</p>
+<ul>
+  <li><strong>空间平台</strong>——以 QGIS 为分析与制图环境，完成数据叠加、缓冲区计算与结果可视化。</li>
+  <li><strong>遥感数据</strong>——使用 SDGSAT 与 VIIRS 的夜间观测数据，刻画城市光环境的空间分布与十年变化趋势。</li>
+  <li><strong>回归分析</strong>——建立卫星亮度指标与地面观测条件之间的回归关系，用于从遥感尺度推估地面夜空亮度。</li>
+  <li><strong>空间插值</strong>——以反距离权重（IDW）方法对离散测点做连续化处理，在候选区域内识别出暗度最高的核心位置。</li>
+  <li><strong>地面实测</strong>——用 SQM 逐点测量夜空亮度，对上述模型结果做实地校核。</li>
+</ul>
+</div>
+
+<div class="doc-full">
+<h2>结果</h2>
+<p>研究最终在杭州市区内定位到一片仍保有暗夜条件的空间，并通过反距离插值得出其中最核心的点——整片区域内夜空最暗的位置。</p>
+<p>这项工作同时揭示了一个结构性矛盾：<strong>城区里最暗的地方，往往并不在公众能够到达的范围内；而公众能走到的地方，又常常被照明点亮。</strong>这一矛盾限制了单纯依靠"寻找最暗点"来解决城市观星问题，也决定了后续工作的方向。</p>
+</div>
+
+<div class="doc-note">
+<strong>关于本页。</strong>研究方法与结论的完整细节，包括数据预处理、模型设定、误差分析与全部测点记录，将在预印本发布后公开。
+</div>
+
+<div class="research-wait">
+  <img src="../img/research/waiting.jpg" alt="等待中的研究细节">
+  <p>抱歉研究细节要等到预印本出来之后再展示喵</p>
+</div>
+      </div>
+      <div class="doc-nav">
+        <span><a class="doc-nav-back" href="dark-sky.html">← 暗夜保护</a></span>
+        <span><a href="map.html">数据地图 →</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-note">
+    <p class="footer-contact">
+      <span class="footer-contact-label">联系</span>
+      <a href="mailto:ronghui0202@gmail.com">ronghui0202@gmail.com</a>
+    </p>
+    <p>本站数据来自作者在杭州的实地测量与公开遥感数据。欢迎引用，请注明来源。</p>
+  </div>
+</footer>
+<script src="../js/main.js?v=40"></script>
+</body>
+</html>

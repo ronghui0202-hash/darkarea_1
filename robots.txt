@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jupiter.zhuafs.com/sitemap.xml
